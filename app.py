@@ -62,7 +62,7 @@ def predict_rent():
 
 st.title('**Warsaw Rent Prediction**')
 
-st.sidebar.title('Pages')
+st.sidebar.title('Menu')
 
 options = st.sidebar.radio('Select page',options = ['Description', 'Predict Rent'])
 
