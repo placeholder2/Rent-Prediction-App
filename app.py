@@ -33,7 +33,7 @@ def predict_rent():
     st.subheader('Predict Rent')
 
     area = st.number_input(label='Area', help='Area in squared meters', step=1, min_value=5, max_value=350, value=30)
-    advertiser = st.selectbox(label='Advertiser', options=advertisers, key=(0, 1))
+    advertiser = st.selectbox(label='Advertiser', options=advertisers)
     building = st.selectbox(label='Building', options=buildings)
     district = st.selectbox(label='District', options=districts)
     elevator = st.checkbox('Elevator')
