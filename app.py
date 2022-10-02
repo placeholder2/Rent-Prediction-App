@@ -9,7 +9,7 @@ model = joblib.load('wr_regressor.pkl')
 
 advertisers = ['Private', 'Public']
 buildings = ['Apartment building', 'Block of flats', 'Tenement house', 'Other']
-districts = ['Bemowo', 'Białołęka', 'Bielany', 'Mokotów', 'Ochota', 'Praga-Południe', 'Praga-Północ',
+districts = ['Bemowo', 'Białołęka', 'Bielany', 'Mokotów', 'Ochota', 'Praga-południe', 'Praga-północ',
              'Rembertów', 'Targówek', 'Ursus', 'Ursynów', 'Wawer', 'Wesoła', 'Wilanów', 'Wola',
              'Włochy', 'Śródmieście', 'Żoliborz']
 
@@ -32,7 +32,7 @@ def predict_rent():
 
     st.subheader('Predict Rent')
 
-    area = st.number_input(label='Area', help='Area in squared meters', step=1, min_value=1, max_value=100, value=30)
+    area = st.number_input(label='Area', help='Area in squared meters', step=1, min_value=5, max_value=350, value=30)
     advertiser = st.selectbox(label='Advertiser', options=advertisers, key=(0, 1))
     building = st.selectbox(label='Building', options=buildings)
     district = st.selectbox(label='District', options=districts)
