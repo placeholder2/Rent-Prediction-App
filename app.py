@@ -7,7 +7,7 @@ num_pipeline = joblib.load('num_pipeline.pkl')
 full_pipeline = joblib.load('full_pipeline.pkl')
 model = joblib.load('wr_regressor.pkl')
 
-advertisers = ['Public','Private']
+advertisers = ['Private','Estate agency']
 buildings = ['Apartment building', 'Block of flats', 'Tenement house', 'Other']
 districts = ['Bemowo', 'Białołęka', 'Bielany', 'Mokotów', 'Ochota', 'Praga-południe', 'Praga-północ',
              'Rembertów', 'Targówek', 'Ursus', 'Ursynów', 'Wawer', 'Wesoła', 'Wilanów', 'Wola',
